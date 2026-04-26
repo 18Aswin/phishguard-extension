@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 12px;
+            width: 280px;
+            margin: 0;
+            background: #1e1b4b;
+            color: #e0e7ff;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+        .header img {
+            width: 24px;
+            height: 24px;
+        }
+        h3 {
+            margin: 0;
+            font-size: 15px;
+            color: #a5b4fc;
+            letter-spacing: 0.5px;
+        }
+        #status {
+            font-size: 13px;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        #reasons {
+            list-style: none;
+            padding: 0;
+            margin: 6px 0 10px 0;
+        }
+        #reasons li {
+            background: rgba(220,38,38,0.15);
+            border-left: 3px solid #f87171;
+            color: #fca5a5;
+            padding: 4px 8px;
+            margin-bottom: 4px;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+        #whitelist-btn {
+            display: none;
+            width: 100%;
+            padding: 7px;
+            background: #312e81;
+            color: #e0e7ff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        #whitelist-btn:hover { background: #3730a3; }
+        #whitelist-msg {
+            font-size: 11px;
+            color: #86efac;
+            margin-top: 6px;
+            display: none;
+        }
+        .score-badge {
+            display: inline-block;
+            background: #dc2626;
+            color: white;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 99px;
+            margin-left: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="icons/icon-48.png" alt="PhishGuard icon"/>
+        <h3>PhishGuard</h3>
+    </div>
+    <p id="status">Checking...</p>
+    <ul id="reasons"></ul>
+    <button id="whitelist-btn">✅ Trust this site</button>
+    <p id="whitelist-msg">✔ Added to whitelist.</p>
+    <script type="module" src="popup.js"></script>
+</body>
+</html>
