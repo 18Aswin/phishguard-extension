@@ -30,7 +30,7 @@ A Chrome extension that automatically detects suspicious and phishing websites i
 
 1. Clone or download this repository
    ```bash
-   git clone https://github.com/YOUR_USERNAME/phishguard-extension.git
+   git clone https://github.com/18Aswin/phishguard-extension.git
    ```
 
 2. Open Chrome and go to `chrome://extensions`
